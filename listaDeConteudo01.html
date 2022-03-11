@@ -1,0 +1,108 @@
+<!DOCTYPE>
+
+<!--Estrutura da pagina-->
+<html>
+
+<head>
+    <title>
+        Imersão Dev Alura - Aula 04
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <h2>Minha lista de filmes:</h2>
+    </p>
+
+</body>
+
+<!--Programação da Pagina-->
+
+<script>
+        var listaFilmes = ["https://img.imirante.com.br/2021/04/28/1619620114-164445316.png", "https://br.web.img2.acsta.net/medias/nmedia/18/92/34/89/20194741.jpg", "https://br.web.img2.acsta.net/medias/nmedia/18/92/91/47/20224867.jpg"]
+
+            for (var i = 0; i < listaFilmes.length; i++) {
+            document.write("<img src=" + listaFilmes[i] + ">")
+        }
+
+</script>
+
+<!--Estilização da Pagina-->
+
+<style>
+    body {
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+        background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+        background-color: #000000;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .page-title {
+        color: #ffffff;
+        margin: 0 0 5px;
+    }
+
+    .page-subtitle {
+        color: #ffffff;
+        margin-top: 5px;
+    }
+
+    .page-logo {
+        width: 200px;
+    }
+
+    .alura-logo {
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    body>img {
+        margin: 0 10px;
+    }
+
+    img {
+        max-height: 250px;
+    }
+
+    h2 {
+        color: #fdfdfd;
+    }
+
+    input {
+        align-items: center;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    button {
+        color: #fdfdfd;
+        margin-top: 12px;
+        padding: 4px 8px;
+        border-radius: 10px;
+        background: #fa0505;
+        width: 100px;
+    }
+</style>
+
+</html>
